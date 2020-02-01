@@ -1,19 +1,6 @@
 Welcome back! I hope you had fun with that exercise.
 
-Let's first implement the `getHamsters` function.
-
-```js
-function getHamsters(breed) {
-  return utilities
-    .getHamsters()
-    .then(getNames)
-    .then(getBreed(breed))
-}
-```
-
-Great, now we have our getHamsters function.
-
-Let's now use the getHamsters result in our mega callback!
+Let's solve this exercise!
 
 ```js
 getDog("Corgi")
@@ -27,7 +14,8 @@ getDog("Corgi")
   .then(console.log)
 ```
 
-Looks like the Winter White hamster is the best best among Corgis, Russian Blue cats, and Hamsters.
+Looking at the terminal, it appears that
+between the Winter White hamster, the Russian Blue cat, and a Corgi, the best pet is a Winter White hamster.
 
 Let's try a German Shepherd dog.
 Still winter white.
@@ -35,4 +23,5 @@ Now let's try a Maltese as the dog.
 
 Oh if you look at the output of the terminal, it looks like the dog isn't found,
 we've been seeing this warning whenever a dog cat or hamster isn't in the predefined list.
-In the next video, we'll learn about what happens when promises reject!
+In the next video, our promises will start rejecting if we pass a breed in that doesn't exist.
+I'll see you in the next video where we'll learn all about promise rejections!
